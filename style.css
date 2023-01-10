@@ -507,6 +507,7 @@ a {
   .capa-inicial {
     background: url(assets/img/mobile-background\ 2.png);
     background-size: cover;
+    background-position: center center;
   }
 
   .group-age {
@@ -574,9 +575,9 @@ a {
 
 @media (max-width: 900px) {
   .capa-inicial {
-    background: url(assets/img/mobile-background\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
   .menu-options {
     display: none;
@@ -602,5 +603,40 @@ a {
 
   .separator-vertical {
     display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .capa-inicial {
+    background: url(./assets/img/mobile-background\ 2\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  .logo img {
+    margin: 0;
+    padding-left: 1.2rem;
+    max-width: 25rem;
+  }
+  .tittle {
+    flex-direction: column;
+    padding-block: 1rem;
+  }
+
+  .tittle img {
+    width: 18rem;
+  }
+
+  .personagens-perfil a img {
+    max-width: 98%;
+  }
+  #screenshots .tittle {
+    flex-direction: column;
+  }
+
+  .history-1 p,
+  .history-2 p,
+  .about-game .about-content-div p {
+    font-size: 1.6rem;
   }
 }
