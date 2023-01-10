@@ -270,12 +270,15 @@ a {
   width: 100%;
   height: 100%;
   display: flex;
+
   justify-content: center;
 }
 
 .personagens-perfil {
   height: auto;
   display: flex;
+
+  justify-content: center;
   gap: 1rem;
   padding-top: 2rem;
 }
@@ -284,7 +287,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .personagens-perfil a p {
@@ -411,7 +413,8 @@ a {
   background: url(./assets/img/fundo-sobre.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  min-height: 0;
+  padding-bottom: 4rem;
   width: 100%;
 }
 
@@ -437,4 +440,167 @@ a {
 
 #slider img.selected {
   opacity: 1;
+}
+
+.only-bg {
+  background: url(./assets/img/fundo-sobre.png);
+
+  padding-block: 2rem;
+}
+
+@media (max-width: 1366px) {
+  .logo img {
+    max-width: 30rem;
+  }
+  .menu-options {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-right: 2.3rem;
+  }
+  .menu-options a li {
+    color: var(--golden-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    transition: all ease-in-out 280ms;
+  }
+
+  .personagens-perfil {
+    flex-wrap: wrap;
+  }
+
+  .age-tag-desc {
+    gap: 1rem;
+  }
+  .group-age li {
+    font-size: 2rem;
+  }
+
+  .history-1 p {
+    width: 45%;
+    font-size: 2.9rem;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .history-2 p {
+    width: 45%;
+    font-size: 2.9rem;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .description-text-about {
+    font-size: 2.9rem;
+  }
+
+  .no-separator {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .capa-inicial {
+    background: url(assets/img/mobile-background\ 2.png);
+    background-size: cover;
+  }
+
+  .group-age {
+    padding-top: 3rem;
+  }
+  .menu-options {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-right: 1.2rem;
+  }
+  .menu-options a li {
+    color: var(--golden-color);
+    font-size: 2rem;
+    font-weight: 700;
+    transition: all ease-in-out 280ms;
+  }
+
+  .history-1,
+  .history-2 {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .history-1 img {
+    width: 100%;
+    padding-inline: 1.2rem;
+  }
+  .history-1 p {
+    width: 100%;
+    padding-block: 1rem;
+  }
+
+  .history-2 {
+    flex-direction: column-reverse;
+  }
+  .history-2 img {
+    width: 100%;
+    padding-inline: 1.2rem;
+  }
+
+  .history-2 p {
+    width: 100%;
+    padding-block: 1rem;
+  }
+
+  .about-content-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .about-content-div img {
+    width: 100%;
+    padding-inline: 1.2rem;
+    padding-block: 1rem;
+  }
+
+  .about-content-div .description-text-about {
+    width: 100%;
+    padding-block: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .capa-inicial {
+    background: url(assets/img/mobile-background\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .menu-options {
+    display: none;
+  }
+
+  .age-img {
+    padding-top: 1rem;
+  }
+  .age-img img {
+    height: 9rem;
+    width: 9rem;
+  }
+  .age-info-group {
+    display: none;
+  }
+
+  .personagens-perfil {
+    display: block;
+  }
+  .personagens-perfil img {
+    padding-block: 1rem;
+  }
+
+  .separator-vertical {
+    display: none;
+  }
 }
