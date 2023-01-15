@@ -19,9 +19,9 @@ body {
   scroll-behavior: smooth;
 }
 
-section {
+/* section {
   min-height: 100vh;
-}
+} */
 li,
 a {
   list-style: none;
@@ -74,6 +74,10 @@ a {
 }
 .white-text {
   color: var(--white) !important;
+}
+
+#btn-mobile {
+  display: none;
 }
 
 .grid-inicial {
@@ -504,10 +508,13 @@ a {
 }
 
 @media (max-width: 1100px) {
+  .inicial {
+    min-height: 100vh;
+  }
   .capa-inicial {
     background: url(assets/img/mobile-background\ 2.png);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
   }
 
   .group-age {
@@ -574,13 +581,66 @@ a {
 }
 
 @media (max-width: 900px) {
+  .inicial {
+    min-height: 96vh;
+  }
   .capa-inicial {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
   }
   .menu-options {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 7.7rem;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+    z-index: 200;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .menu-options a {
     display: none;
+  }
+
+  .rat-icon-menu {
+    height: 3.7rem;
+    width: 3.7rem;
+
+    border: none;
+    border-radius: 1.5rem;
+  }
+
+  #btn-mobile {
+    display: block;
+    margin-right: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.07);
+    border: none;
+  }
+  .menu-options.mobile-ativo {
+    height: calc(100vh - 7.7rem);
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+    padding-bottom: 7.2rem;
+    gap: 10rem;
+    overflow-y: auto;
+  }
+
+  .menu-options.mobile-ativo a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-options.mobile-ativo a li {
+    font-size: 3.4rem;
   }
 
   .age-img {
@@ -606,12 +666,18 @@ a {
   }
 }
 
+@media (max-width: 700px) {
+  .inicial {
+    min-height: 80vh;
+  }
+}
 @media (max-width: 520px) {
+  .inicial {
+    min-height: 55vh;
+  }
   .capa-inicial {
-    background: url(./assets/img/mobile-background\ 2\ 1.png);
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    max-height: 60vh;
   }
   .logo img {
     margin: 0;

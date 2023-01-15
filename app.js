@@ -43,3 +43,23 @@ function backtoTopScrollReveal() {
     backtoTop.classList.remove("back-to-top");
   }
 }
+
+let btnMobile = document.querySelector("#btn-mobile");
+let menuOptions = document.querySelector(".menu-options");
+let menuOptionsItems = document.querySelectorAll(".menu-options > a");
+
+console.log(menuOptionsItems);
+btnMobile.addEventListener("click", () => {
+  menuOptions.classList.toggle("mobile-ativo");
+});
+
+btnMobile.addEventListener("touchstart", (event) => {
+  if (event.type === "touchstart") event.preventDefault();
+  menuOptions.classList.toggle("mobile-ativo");
+});
+
+for (let itemMenu of menuOptionsItems) {
+  itemMenu.addEventListener("click", () => {
+    menuOptions.classList.remove("mobile-ativo");
+  });
+}
