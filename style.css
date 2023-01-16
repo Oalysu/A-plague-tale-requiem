@@ -640,7 +640,7 @@ a {
     align-items: center;
   }
   .menu-options.mobile-ativo a li {
-    font-size: 3.4rem;
+    font-size: 2.8rem;
   }
 
   .age-img {
@@ -670,14 +670,31 @@ a {
   .inicial {
     min-height: 80vh;
   }
+
+  .menu-options.mobile-ativo a li {
+    font-size: 2.5rem;
+  }
+
+  .age-img {
+    padding-top: 3.2rem;
+  }
+  .age-img img {
+    height: 5.8rem;
+    width: 5.8rem;
+  }
 }
 @media (max-width: 520px) {
   .inicial {
     min-height: 55vh;
   }
+
   .capa-inicial {
     background-size: cover;
     max-height: 60vh;
+  }
+
+  .menu-options.mobile-ativo a li {
+    font-size: 2.5rem;
   }
   .logo img {
     margin: 0;
@@ -691,6 +708,14 @@ a {
 
   .tittle img {
     width: 18rem;
+  }
+
+  .age-img {
+    padding-top: 3.2rem;
+  }
+  .age-img img {
+    height: 5.5rem;
+    width: 5.5rem;
   }
 
   .personagens-perfil a img {
