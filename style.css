@@ -452,6 +452,13 @@ a {
   padding-block: 2rem;
 }
 
+.character-main-mobile {
+  display: none;
+}
+
+.back-container {
+  display: none;
+}
 @media (max-width: 1366px) {
   .logo img {
     max-width: 30rem;
@@ -504,6 +511,74 @@ a {
 
   .no-separator {
     display: none;
+  }
+  .back-container {
+    display: block;
+  }
+
+  /* Seção personagens individualmente */
+
+  .name-character,
+  .main-character {
+    display: none;
+  }
+
+  .character-main-mobile {
+    display: block;
+  }
+  .back-container {
+    position: absolute;
+
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .back-container a img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .amicia-main,
+  .hugo-main,
+  .lucas-main,
+  .sophia-main {
+    background-position: center;
+    min-height: 90vh;
+  }
+
+  .character-main-mobile {
+    padding-top: 2rem;
+    background: url(./assets/img/fundo-sobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .desc-character {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+  }
+  .desc-character p {
+    width: 90%;
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+  .stats-character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stats-character p {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+
+  img.mobile-separator {
+    max-width: 90%;
   }
 }
 
@@ -577,6 +652,68 @@ a {
   .about-content-div .description-text-about {
     width: 100%;
     padding-block: 1.2rem;
+  }
+
+  /* Seção personagens individualmente */
+
+  .name-character,
+  .main-character {
+    display: none;
+  }
+
+  .back-container {
+    position: absolute;
+
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .back-container a img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .amicia-main,
+  .hugo-main,
+  .lucas-main,
+  .sophia-main {
+    background-position: center;
+    min-height: 80vh;
+  }
+
+  .character-main-mobile {
+    padding-top: 2rem;
+    background: url(./assets/img/fundo-sobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .desc-character {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+  }
+  .desc-character p {
+    width: 90%;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  .stats-character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stats-character p {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  img.mobile-separator {
+    max-width: 90%;
   }
 }
 
@@ -664,6 +801,38 @@ a {
   .separator-vertical {
     display: none;
   }
+
+  /* Seção personagens individualmente */
+
+  .name-character,
+  .main-character {
+    display: none;
+  }
+
+  .back-container {
+    position: absolute;
+
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .back-container a img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .sophia-main {
+    background-position: center;
+    min-height: 82vh;
+  }
+
+  .desc-character p {
+    font-size: 2.9rem;
+  }
+
+  .stats-character p {
+    font-size: 2.7rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -682,13 +851,42 @@ a {
     height: 5.8rem;
     width: 5.8rem;
   }
+
+  /* Seção personagens individualmente */
+
+  .name-character,
+  .main-character {
+    display: none;
+  }
+
+  .back-container {
+    position: absolute;
+
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .sophia-main {
+    background-position: center;
+    min-height: 80vh;
+  }
+
+  .desc-character p {
+    font-size: 2.3rem;
+  }
+
+  .stats-character p {
+    font-size: 2.1rem;
+  }
 }
+
 @media (max-width: 520px) {
   .inicial {
     min-height: 55vh;
   }
 
-  .capa-inicial {
+  .capa-inicial,
+  .sophia-main {
     background-size: cover;
     max-height: 60vh;
   }
@@ -719,7 +917,7 @@ a {
   }
 
   .personagens-perfil a img {
-    max-width: 98%;
+    max-width: 91%;
   }
   #screenshots .tittle {
     flex-direction: column;
@@ -729,5 +927,13 @@ a {
   .history-2 p,
   .about-game .about-content-div p {
     font-size: 1.6rem;
+  }
+
+  .desc-character p {
+    font-size: 2.1rem;
+  }
+
+  .stats-character p {
+    font-size: 2rem;
   }
 }

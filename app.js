@@ -48,7 +48,6 @@ let btnMobile = document.querySelector("#btn-mobile");
 let menuOptions = document.querySelector(".menu-options");
 let menuOptionsItems = document.querySelectorAll(".menu-options > a");
 
-console.log(menuOptionsItems);
 btnMobile.addEventListener("click", () => {
   menuOptions.classList.toggle("mobile-ativo");
 });
