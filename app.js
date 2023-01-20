@@ -62,3 +62,9 @@ for (let itemMenu of menuOptionsItems) {
     menuOptions.classList.remove("mobile-ativo");
   });
 }
+
+window.sr = ScrollReveal({ reset: true });
+sr.reveal("#historia", { duration: 1000 });
+sr.reveal("#sobre", { duration: 1000 });
+sr.reveal("#personagens", { duration: 1000 });
+sr.reveal("#screenshots", { duration: 1000 });
