@@ -611,12 +611,6 @@ footer .separator img {
   max-width: 100%;
 }
 
-#historia,
-#sobre,
-#personagens,
-#screenshots {
-  visibility: hidden;
-}
 @media (max-width: 1100px) {
   .inicial {
     min-height: 100vh;
